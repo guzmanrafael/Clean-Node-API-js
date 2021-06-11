@@ -17,6 +17,16 @@
     "TDD",
     "express"
   ],
+  "lint-staged": {
+    "*.js": [
+      "standard --fix"
+    ]
+  },
+  "husky": {
+    "hooks":{
+      "pre-commit": "lint-staged"
+    }
+  },
   "author": "Rafael Guzmán",
   "license": "ISC",
   "bugs": {
@@ -24,6 +34,8 @@
   },
   "homepage": "https://github.com/guzmanrafael/Clean-Node-API-js#readme",
   "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "standard": "^16.0.3"
   }
 }
