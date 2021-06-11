@@ -4,9 +4,10 @@
   "description": "A simple nodejs API, using clean architecture and TDD concepts",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --silent --colors --noStackTrace",
-    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
-    "test:ci": "jest --coverage --noStackTrace --silent"
+    "test": "jest --silent --colors --noStackTrace --passWithNoTests",
+    "test:unit":"npm test -- --watch",
+    "test:staged": "jest --findRelatedTests",
+    "test:ci": "jest --coverage"
   },
   "repository": {
     "type": "git",
