@@ -4,7 +4,7 @@
   "description": "A simple nodejs API, using clean architecture and TDD concepts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     ]
   },
   "husky": {
-    "hooks":{
+    "hooks": {
       "pre-commit": "lint-staged"
     }
   },
@@ -35,6 +35,7 @@
   "homepage": "https://github.com/guzmanrafael/Clean-Node-API-js#readme",
   "devDependencies": {
     "husky": "^6.0.0",
+    "jest": "^27.0.4",
     "lint-staged": "^11.0.0",
     "standard": "^16.0.3"
   }
