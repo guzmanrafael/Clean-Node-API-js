@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/guzmanrafael/Clean-Node-API-js/issues"
   },
-  "homepage": "https://github.com/guzmanrafael/Clean-Node-API-js#readme"
+  "homepage": "https://github.com/guzmanrafael/Clean-Node-API-js#readme",
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
 }
