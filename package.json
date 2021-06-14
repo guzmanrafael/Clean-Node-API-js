@@ -2,13 +2,14 @@
   "name": "clean-node-api",
   "version": "1.0.0",
   "description": "A simple nodejs API, using clean architecture and TDD concepts",
-  "main": "index.js",
+  "main": "src/main/index.js",
   "scripts": {
-    "test": "jest --silent --colors --noStackTrace --passWithNoTests",
+    "start": "node src/main/index.js",
+    "test": "jest --colors --noStackTrace --passWithNoTests",
     "test:unit": "npm test -- --watchAll -c jest-unit-config.js",
     "test:integration": "npm test -- --watchAll -c jest-integration-config.js",
-    "test:staged": "npm test -- --findRelatedTests",
-    "test:ci": "npm test -- --coverage"
+    "test:staged": "npm test -- --findRelatedTests --silent",
+    "test:ci": "npm test -- --coverage --silent"
   },
   "repository": {
     "type": "git",
@@ -28,12 +29,17 @@
   },
   "homepage": "https://github.com/guzmanrafael/Clean-Node-API-js#readme",
   "devDependencies": {
+    "@shelf/jest-mongodb": "^1.2.5",
     "husky": "^6.0.0",
     "jest": "^27.0.4",
     "lint-staged": "^11.0.0",
     "standard": "^16.0.3"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.9",
     "validator": "^13.6.0"
   }
 }
